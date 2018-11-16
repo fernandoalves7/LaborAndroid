@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_screen">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:paddingTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@mipmap/background3">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/white"
+            android:gravity="left|center_vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingRight="5dp"
+                android:text="Login:" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:text="hc7"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/white"
+            android:gravity="left|center_vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Password:" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleContentDescription=""
+                app:passwordToggleTint="@color/black"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black"
+                app:passwordToggleEnabled="true">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColorHighlight="@color/black"
+                    android:shadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:backgroundTint="@color/black"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:visibility="visible"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/remember_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Remember password"
+            android:textColor="@color/white"
+            app:buttonTint="@color/white"
+            android:buttonTint="@color/white" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_button_panel"
+            android:orientation="horizontal"
+            android:layout_margin="0dp"
+            android:paddingTop="5dp"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:onClick="login"
+                android:shadowColor="@color/white"
+                android:text="Connect"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/servers_list"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/authenticating_panel"
+        android:orientation="vertical"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background ="@drawable/progress_drawable"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/authenticating_feedback_text"
+            style="@style/TextValue"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/textsize_small"
+            android:text="Authenticating user..." />
+    </LinearLayout>
+</RelativeLayout>

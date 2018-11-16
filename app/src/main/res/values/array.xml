@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="servers_array">
+        <item>https://www.rcofox.com</item>
+        <item>https://www.rcolion.com</item>
+        <item>https://www.rcofalcon.com</item>
+        <item>http://saturn</item>
+        <item>https://demo.rco.com</item>
+    </string-array>
+</resources>

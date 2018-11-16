@@ -1,0 +1,270 @@
+<resources>
+    <!-- General -->
+
+    <string name="app_name">Timecards</string>
+    <string name="icon_name">Timecards</string>
+    <string name="menu_info">Info</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_create">Create</string>
+    <string name="list_empty">Empty</string>
+    <string name="invalid_field">Invalid \'NAME\' value!</string>
+    <string name="required_greaterthanzerovalue">\'NAME\' needs to be greater than 0!</string>
+    <string name="remote_photo">(Remote)</string>
+    <string name="browsephoto_title">Browse photo</string>
+    <string name="alreadysync">Already synced.</string>
+    <string name="signature_screen_placeholder_text">Put\nyour sign\nhere</string>
+    <string name="string_delivery">Delivery</string>
+    <string name="string_pickup">Pickup</string>
+    <string name="string_route">Route</string>
+    <string name="string_bol">BOL</string>
+    <string name="string_select_status">Select status…</string>
+    <string name="string_video_tutorial">Video tutorial</string>
+    <string name="string_received_by">Received by</string>
+    <string name="string_search">string_search</string>
+
+    <string name="error_unable_to_initialize_app">Unexpected internal state. Unable to initialize application, please try to reinstall or contact support.</string>
+    <string name="error_unable_to_sync_app">Unable to sync. Please check your connectivity and try again or contact support.</string>
+    <string name="error_unable_to_login">Invalid username or password.\n\nPlease try again or contact support to have your account checked.</string>
+
+    <!-- Generic but app specific -->
+
+    <string name="vendors_spinner">Vendors</string>
+    <string name="customers_spinner">Customers</string>
+    <string name="terms_spinner">Terms</string>
+    <string name="location_spinner">Location</string>
+    <string name="technician_spinner">Technician</string>
+    <string name="vendors_spinner_empty">Please specify a vendor first!</string>
+    <string name="customers_spinner_empty">Please specify a customer first!</string>
+    <string name="technicians_spinner_empty">Please specify a technician first!</string>
+
+    <!-- Timecards -->
+
+    <string name="error_unable_to_submit_timecard">Unable to submit timecard. Please check your connectivity and try again or contact support.</string>
+    <string name="timecard_submitted">Timecard submitted!</string>
+
+    <!-- Dashboard -->
+
+    <string name="dashboard_title_jobs">JOBS</string>
+    <string name="dashboard_title_expenses">EXPENSES</string>
+    <string name="dashboard_title_map">MAP</string>
+    <string name="dashboard_title_packages">PACKAGES</string>
+    <string name="dashboard_title_calendar">CALENDAR</string>
+    <string name="dashboard_title_customers">CUSTOMERS</string>
+    <string name="dashboard_title_employees">STAFF</string>
+    <string name="dashboard_title_vendors">VENDORS</string>
+    <string name="dashboard_title_trucks">TRUCKS</string>
+    <string name="dashboard_title_sales">Sales</string>
+    <string name="dashboard_title_salesorder">SALES ORDER</string>
+    <string name="dashboard_title_timecards">TIMECARDS</string>
+    <string name="dashboard_title_labor">LABOR</string>
+    <string name="dashboard_title_files">FILES</string>
+    <string name="dashboard_title_stores">INVENTORY</string>
+    <string name="dashboard_title_invoices">INVOICES</string>
+    <string name="dashboard_title_leads">LEADS</string>
+    <string name="dashboard_title_prospects">PROSPECTS</string>
+    <string name="dashboard_title_dealers">DEALERS</string>
+    <string name="dashboard_title_technicians">TECHNICIANS</string>
+    <string name="dashboard_title_settings">SETTINGS</string>
+    <string name="dashboard_title_sensors">SENSORS</string>
+    <string name="dashboard_title_checkout">CHECK OUT</string>
+    <string name="dashboard_title_checkin">CHECK IN</string>
+    <string name="dashboard_title_library">LIBRARY</string>
+    <string name="dashboard_title_boxes">BOXES</string>
+    <string name="dashboard_title_move">MOVE</string>
+    <string name="dashboard_title_shipping">SHIPPING</string>
+    <string name="dashboard_title_receiving">RECEIVING</string>
+    <string name="dashboard_title_picklist">PICK LIST</string>
+    <string name="dashboard_title_stockcount">STOCK COUNT</string>
+    <string name="dashboard_title_fill">FILL</string>
+    <string name="dashboard_title_forms">FORMS</string>
+    <string name="dashboard_title_dvir">DVIR</string>
+    <string name="dashboard_title_trucklogs">LOGS</string>
+    <string name="dashboard_title_syncstatusyellow">SYNC STATUS</string>
+    <string name="dashboard_title_sync_now">SYNC NOW</string>
+    <string name="dashboard_title_fields">FIELDS</string>
+    <string name="dashboard_title_plantings">PLANTING</string>
+    <string name="dashboard_title_delivery">DELIVERY</string>
+    <string name="dashboard_title_harvest">HARVEST</string>
+    <string name="dashboard_title_devices">IRRIGATION</string>
+    <string name="dashboard_title_logbook">LOGBOOK</string>
+    <string name="dashboard_title_trailers">TRAILERS</string>
+    <string name="dashboard_title_gauges">GAUGES</string>
+    <string name="dashboard_title_driver_settings">DRIVER SETTINGS</string>
+
+    <!-- Login -->
+
+    <string name="login_title">Login</string>
+    <string name="login_button">Login</string>
+    <string name="login_name">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_visible_checkbox">Show password</string>
+    <string name="login_password_remember">Remember password</string>
+    <string name="login_info">Please enter your username and password above.</string>
+    <string name="login_usernamefieldwithwronginputsize">Username missing or too short.</string>
+    <string name="login_passwordfieldwithwronginputsize">Password missing or too short.</string>
+    <string name="login_loadingdata">Downloading data...</string>
+    <string name="login_authenticationblocked">Authentication blocked by to many failed logins. Please try again in one hour.</string>
+    <string name="login_unabletoauthenticate">Unable to login.&lt;br/>&lt;br/>Check your credentials and internet connection.</string>
+    <string name="login_syncerror">Error synchronizing data. Please check your internet connection or try again later.</string>
+    <string name="login_current_url">Current Url:   </string>
+    <string name="login_alternate_server">select alternate server...</string>
+
+    <!-- Sync status -->
+
+    <string name="syncstatus_title">Sync status</string>
+    <string name="sync_progress">Sync Startup is in progress</string>
+    <string name="syncstatusdetail_title">Sync status entry</string>
+    <string name="syncstatus_sharinglogs">Sharing logs with software vendor...</string>
+
+    <!-- Settings -->
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_login_title">Login</string>
+    <string name="settings_move_rfid">RFID with Move</string>
+    <string name="settings_data_synchronization_title">Data Synchronization</string>
+    <string name="settings_files_title">Log Files</string>
+    <string name="settings_wallpaper_title">Wallpaper</string>
+    <string name="settings_legal_title">Legal</string>
+    <string name="settings_privacy_title">Privacy Policy</string>
+    <string name="settings_license_title">License</string>
+    <string name="settings_information_title">Information</string>
+    <string name="settings_network_usage_title">Network Usage</string>
+    <string name="settings_credits_title">Credits</string>
+    <string name="settings_payment_title">Payment</string>
+    <string name="settings_services_title">Services</string>
+    <string name="settings_tracking_parts_title">Tracking Parts</string>
+    <string name="settings_non_tracking_parts_title">Non Tracking Parts</string>
+    <string name="settings_url">Url</string>
+    <string name="settings_resettodefault">Default settings</string>
+    <string name="filter_title">Filter</string>
+    <string name="wallpaper_title">Wallpaper</string>
+    <string name="setting_command_title">Settings</string>
+    <string name="setting_command_test_connection">Test connection</string>
+    <string name="setting_command_change_password">Change password</string>
+    <string name="setting_command_resync_with_server">Resync with server</string>
+    <string name="setting_command_reset_local_data">Reset local data</string>
+    <string name="setting_command_connection_info">Connection information</string>
+    <string name="test_connection">Test connection</string>
+    <string name="setting_command_logout">Logout</string>
+    <string name="setting_command_logout_alert">Are you sure?</string>
+
+    <!--Truck  -->
+
+    <string name="truck_title">New Truck</string>
+    <string name="truck_edit_title">Edit Truck</string>
+    <string name="truck_refresh_failed">Refreshing failed</string>
+    <string name="truck_fullsync_failed">Full synching failed</string>
+    <string name="truck_refresh_msg">Refreshing ...</string>
+    <string name="truck_fullsync_msg">Full synching ...</string>
+    <string name="map_search_arrow">Map_search_arrow</string>
+    <string name="truck_add_store_msg">Adding truck ...</string>
+    <string name="truck_edit_store_msg">Modifying truck ...</string>
+    <string name="truck_add_store_title">Add Truck</string>
+    <string name="truck_add_store_failed">Adding truck failed</string>
+    <string name="truck_deleting_msg">Deleting ...</string>
+    <string name="truck_delete_store_title">Delete Truck</string>
+    <string name="truck_delete_store_failed">Deleteing truck failed</string>
+
+    <!-- Labor -->
+
+    <string name="labor_title">Labor</string>
+
+    <string name="laborToAdd">Select labor to be add:</string>
+    <string name="laborLocationToAdd">Select Location to add:</string>
+    <string name="laborJobToAdd">Select job to add:</string>
+    <string name="labor_add_title">Title:</string>
+    <string name="labor_add_firstName">First Name:</string>
+    <string name="labor_add_lastName">Last name:</string>
+    <string name="labor_add_image">Add image for the labor</string>
+    <string name="labor_add_saveBtn">Save new labor user</string>
+    <string name="labor_add_company">Company name:</string>
+    <string name="labor_add_address">Address:</string>
+    <string name="labor_add_city">City:</string>
+    <string name="labor_add_state">State:</string>
+    <string name="labor_add_zipCode">Zip code:</string>
+    <string name="labor_add_email">Email:</string>
+    <string name="labor_add_telephone">Telephone:</string>
+    <string name="labor_add_password">Password:</string>
+    <string name="labor_add_confirmation">Confirmation:</string>
+    <string name="labor_map_title">Labor Map</string>
+    <string name="labor_location_description">Enter Location Description</string>
+    <string name="labor_enter_location_name">Please enter a Location Name, to create a new Location</string>
+    <string name="labor_select_group">Please select a group!</string>
+    <string name="labor_confirmation_1">Are you sure you want to select: LOCATION_NAME?</string>
+    <string name="enter_text_here">Enter text here..</string>
+    <string name="labor_photo_path">Path:</string>
+    <string name="labor_photo_diagonal">/</string>
+    <string name="labor_enter_group_name">Enter Group Name</string>
+    <string name="labor_enter_description">Enter Description</string>
+    <string name="labor_select_labor">Please select a Labor.</string>
+    <string name="labor_group_tomove">Select group to move Labor:</string>
+    <string name="labor_edit">Edit Labor</string>
+    <string name="labor_string_0001">NAME\'s Detail</string>
+    <string name="labor_string_0002">Please select a location first!</string>
+    <string name="labor_string_0003">Please select a job first!</string>
+    <string name="labor_string_0004">Please select another labor, this already exists in another Labor Group</string>
+    <string name="labor_string_0005">Are you sure you want to remove: LABOR_NAME?</string>
+    <string name="labor_string_0006">Time cards clocked in for the Labor Group selected</string>
+    <string name="labor_string_0007">Group moved group successfully.</string>
+    <string name="labor_string_0008">Time cards clocked out for the Labor Group selected.</string>
+    <string name="labor_string_0009">Creating a new labor.</string>
+    <string name="labor_string_0010">Please make sure that the password and confirmation are the same.</string>
+    <string name="labor_string_0011">Labor created successfully.</string>
+    <string name="labor_string_0012">Are you sure you want to add:LABOR_NAME to Labor Group: GROUP_NAME?</string>
+    <string name="labor_string_0013">Clock In done successfuly for the labor selected.</string>
+    <string name="labor_string_0014">Please select a labor before clock out.</string>
+    <string name="labor_string_0015">Time cards clocked out for the Labor selected.</string>
+    <string name="labor_string_0016">Labor moved successfuly to the group selected.</string>
+    <string name="labor_string_0017">Please select another group, this labor is already member of the group selected.</string>
+    <string name="labor_string_0018">Failed changing labor of group.</string>
+    <string name="labor_string_0019">Time cards clocked in.</string>
+    <string name="labor_string_0020">Time cards clocked out.</string>
+    <string name="labor_string_0021">Labor edited successfully.</string>
+    <string name="string_labor">Labor</string>
+    <string name="string_labor_dots">Labor:</string>
+    <string name="string_agriculture_jobs">Agriculture Jobs</string>
+    <string name="string_groups">Groups</string>
+    <string name="string_labor_group_name">Labor Group Name</string>
+    <string name="string_add_group">Add Group</string>
+    <string name="string_add_labor">Add Labor</string>
+    <string name="string_labor_location">Labor Location</string>
+    <string name="string_start_time">Start Time</string>
+    <string name="string_total_hours">Total Hours</string>
+    <string name="string_total_amount">Total Amount</string>
+    <string name="string_ok">Ok</string>
+    <string name="string_groups_lower">groups</string>
+    <string name="string_labor_user">Labor User</string>
+    <string name="string_move_group">Move Group</string>
+    <string name="string_clock_in_group">Clock In Group</string>
+    <string name="string_clock_out_group">Clock Out Group</string>
+    <string name="string_add_group_member">Add Group Member</string>
+    <string name="string_remove_group_member">Remove Group Member</string>
+    <string name="string_add_quantity">Add Quantity</string>
+    <string name="string_clock_in">Clock In</string>
+    <string name="string_clock_out">Clock Out</string>
+    <string name="string_move_to_group">Move To Group</string>
+    <string name="string_job">Job</string>
+    <string name="string_submit_timecard">Submit Time Card</string>
+    <string name="string_submit_timecards">Submit Time Cards</string>
+    <string name="string_id">Id :</string>
+    <string name="string_current_location">Current Location :</string>
+    <string name="string_current_job">Current Job :</string>
+    <string name="string_today_hours">Today Hours :</string>
+    <string name="string_total_hours_dots">Total Hours :</string>
+    <string name="string_today_quantity">Today Quantity :</string>
+    <string name="string_total_quantity">Total Quantity :</string>
+    <string name="string_overtime_hours">Overtime Hours :</string>
+    <string name="string_double_overtime_hours">Double Overtime Hours :</string>
+    <string name="string_clock_in_labors">Clock In Labors</string>
+    <string name="string_clock_out_labors">Clock Out Labors</string>
+    <string name="string_clear_list">Clear List</string>
+    <string name="string_enter_recordId">Please enter the RecordId:</string>
+    <string name="string_enter_quantity">Please enter the quantity:</string>
+    <string name="string_transport">Transport</string>
+    <string name="received_label">Received:</string>
+    <string name="string_labor_recordId">Please enter the Labor RecordId:</string>
+    <string name="string_transport_recordId">Please enter the Transport RecordId:</string>
+    <string name="i9_save_error">Error saving I9 form.</string>
+    <string name="string_more_firstUpper">More</string>
+    <string name="string_less_firstUpper">Less</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/list_background_selector2"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_side_padding"
+        android:paddingRight="@dimen/default_side_padding"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/labor_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_field1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:text="aaaaaaaa"
+            android:textColor="@color/black"
+            android:textSize="21dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_field2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:text="bbb"
+            android:textColor="@color/black"
+            android:textSize="15dip"/>
+    </LinearLayout>
+</RelativeLayout>

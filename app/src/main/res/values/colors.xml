@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="red">#BB0000</color>
+    <color name="gray">#BBBBBB</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="subtitle_bg2">#ff6e6e6e</color>
+    <color name="subtitle_text">#FFFFFF</color>
+    <color name="grey">#ffc7c7c7</color>
+    <color name="dark_grey">#ff6e6e6e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#8fd8f8</color>
+    <color name="default_blue">#19B1DC</color>
+    <color name="default_blue_opac">#FF19B1DC</color>
+    <color name="light_blue">#19B1DC</color>
+    <color name="text_secondary_light">#bbbbbb</color>
+    <color name="grey_border">#bbbbbb</color>
+    <color name="item_border">#dddddd</color>
+</resources>

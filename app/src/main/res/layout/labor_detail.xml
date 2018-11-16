@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_panel"
+        android:orientation="vertical" >
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <LinearLayout android:id="@+id/lyt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView style="@style/TextLabel2" android:text="Name:"/>
+                <TextView android:id="@+id/tv_firstLastName" style="@style/TextValue2" android:text="Luke, afddfs"/>
+
+                <TextView style="@style/TextLabel2" android:text="Today Hours:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/timecards"/>
+                    <TextView style="@style/TextValue2" android:id="@+id/todayHours" android:text="0.00"/>
+                </LinearLayout>
+
+                <TextView style="@style/TextLabel2" android:text="Timecard Total Hours:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/timecards"/>
+                    <TextView style="@style/TextValue2" android:id="@+id/timecardTotalHours" android:text="0.00"/>
+                </LinearLayout>
+
+                <TextView style="@style/TextLabel2" android:text="Today Overtime:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/timecards"/>
+                    <TextView style="@style/TextValue2" android:id="@+id/todayOvertime" android:text="0.00"/>
+                </LinearLayout>
+
+                <TextView style="@style/TextLabel2" android:text="Today Overtime Double:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/timecards"/>
+                    <TextView style="@style/TextValue2" android:id="@+id/todayOvertimeDouble" android:text="0.00"/>
+                </LinearLayout>
+
+                <TextView style="@style/TextLabel2" android:text="Today Break Time:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/timecards"/>
+                    <TextView style="@style/TextValue2" android:id="@+id/todayBreakTime" android:text="0.00"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip" >
+            <TextView android:id="@+id/clock_in_button"
+                android:layout_marginLeft="35dp"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="Clock In"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+            <TextView android:id="@+id/clock_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="Clock Out"
+                android:layout_alignRight="@+id/clock_in_button"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/break_button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="37dp"
+                android:layout_marginStart="37dp"
+                android:visibility="invisible"
+                android:layout_toEndOf="@+id/clock_in_button"
+                android:layout_toRightOf="@+id/clock_in_button"
+                android:text="Break"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sync_timecard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_panel"
+        android:orientation="vertical"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background ="@drawable/progress_drawable"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/loading_feedback_text"
+            style="@style/TextValue"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/textsize_small"
+            android:text="Syncing..." />
+    </LinearLayout>
+</RelativeLayout>
